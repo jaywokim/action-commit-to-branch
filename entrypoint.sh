@@ -31,4 +31,4 @@ fi
 git stash pop
 git add .
 git commit -m "${INPUT_COMMIT_MESSAGE}"
-git push -f --set-upstream origin "${INPUT_BRANCH}"
+git push --set-upstream origin "${INPUT_BRANCH}" --force
