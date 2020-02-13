@@ -29,7 +29,6 @@ else
 fi
 
 git rm -r test-report
-git rm -r test/__image_snapshots__/__diff_output__
 git commit -m "remove test artifacts"
 git push --set-upstream origin "${INPUT_BRANCH}"
 
