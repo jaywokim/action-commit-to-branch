@@ -30,5 +30,5 @@ fi
 
 git stash pop
 git add .
-git commit -m "testing force push again"  #"${INPUT_COMMIT_MESSAGE}"
-git push origin "${INPUT_BRANCH}" -f #--set-upstream
+git commit -m "testing force push delete"  #"${INPUT_COMMIT_MESSAGE}"
+git push origin "${INPUT_BRANCH}" --delete #--set-upstream
