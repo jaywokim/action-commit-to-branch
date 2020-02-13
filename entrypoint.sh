@@ -21,6 +21,8 @@ git fetch --all
 
 git stash
 
+git branch -d "${INPUT_BRANCH}"
+
 # Will create branch if it does not exist
 if [[ $( git branch -r | grep "$INPUT_BRANCH" ) ]]; then
    git checkout "${INPUT_BRANCH}"
@@ -30,5 +32,5 @@ fi
 
 git stash pop
 git add .
-git commit -m "testing force push delete"  #"${INPUT_COMMIT_MESSAGE}"
-git push origin "${INPUT_BRANCH}" --delete #--set-upstream
+git commit -m "${INPUT_COMMIT_MESSAGE}"
+git push --set-upstream origin "${INPUT_BRANCH}"
