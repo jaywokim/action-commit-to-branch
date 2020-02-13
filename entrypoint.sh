@@ -21,8 +21,6 @@ git fetch --all
 
 git stash
 
-git branch -d "${INPUT_BRANCH}"
-
 # Will create branch if it does not exist
 if [[ $( git branch -r | grep "$INPUT_BRANCH" ) ]]; then
    git checkout "${INPUT_BRANCH}"
