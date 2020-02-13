@@ -28,7 +28,7 @@ else
    git checkout -b "${INPUT_BRANCH}"
 fi
 
-git stash pop
+#git stash pop
 git add .
-git commit -m "${INPUT_COMMIT_MESSAGE}"
-git push --set-upstream origin "${INPUT_BRANCH}" --force
+git commit -m "testing force push"  #"${INPUT_COMMIT_MESSAGE}"
+git push -f origin "${INPUT_BRANCH}"
